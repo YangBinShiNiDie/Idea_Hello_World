@@ -16,7 +16,10 @@ import java.util.Date;
  * @date 2020-12-01 17:09
  */
 public class DateUtils {
-
+    /**
+     * @param date 时间
+     * @return 年-月-日 时-分-秒
+     */
     public String dateFromStr(Date date) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         return sdf.format(date);
