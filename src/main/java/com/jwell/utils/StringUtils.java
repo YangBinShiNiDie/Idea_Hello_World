@@ -1,10 +1,3 @@
-/*
- * Copyright 2020 tu.cn All right reserved. This software is the
- * confidential and proprietary information of tu.cn ("Confidential
- * Information"). You shall not disclose such Confidential Information and shall
- * use it only in accordance with the terms of the license agreement you entered
- * into with Tu.cn
- */
 package com.jwell.utils;
 
 /**
@@ -13,8 +6,22 @@ package com.jwell.utils;
  */
 public class StringUtils {
 
+    /**
+     * 判断字符串是否为空
+     * @param string
+     * @return
+     */
     public boolean strIsNull(String string) {
         return string == null || string.length() == 0;
+    }
+
+    /**
+     * 判断字符串长度是否大于11
+     * @param str
+     * @return
+     */
+    public boolean strIsNumber(String str) {
+        return str.length() > 11 ;
     }
 
 }
