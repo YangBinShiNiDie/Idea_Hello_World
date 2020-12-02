@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 /**
- * @author Administrator
+ * @author yb
  * @date 2020-12-01 09:19
  */
 @Controller
