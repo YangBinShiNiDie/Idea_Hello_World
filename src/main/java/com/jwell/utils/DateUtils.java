@@ -18,7 +18,7 @@ import java.util.Date;
 public class DateUtils {
     /**
      * @param date 时间
-     * @return 年-月-日 时-分-秒
+     * @return 年-月-日 时:分:秒
      */
     public String dateFromStr(Date date) {
         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
