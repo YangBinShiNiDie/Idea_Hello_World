@@ -149,7 +149,7 @@ public class ThredTest {
                 +cal.get(Calendar.MINUTE)+"分 "+cal.get(Calendar.SECOND)+"秒");
         System.out.println("Calendar 类输出的月份是从0到11的--当前月份"+cal.get(Calendar.MONTH));    // 0 - 11
 
-        // Java 8
+        // Java_8
         LocalDateTime dt = LocalDateTime.now();
         System.out.println(dt.getYear()+"年 "+dt.getMonthValue()+"月 "+dt.getDayOfMonth()+"日 "
                             +dt.getHour()+"时 "+dt.getMinute()+"分 "+dt.getSecond()+"秒");
