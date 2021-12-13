@@ -163,6 +163,43 @@ public class ThredTest {
         System.out.println(method.invoke(str));
     }
 
+    @Test
+    public void quChong() {
+        List<Integer> list = new ArrayList<>();
+        list.add(1);
+        list.add(3);
+        list.add(5);
+        list.add(5);
+        list.add(3);
+        list.add(9);
+        list.add(7);
+        System.out.println("原集合数据：" + list);
+
+        //去重  contains判断去重
+        List<Integer> newList = new ArrayList<>(list.size());
+        Iterator<Integer> iterator = list.iterator();
+        while (iterator.hasNext()) {
+            Integer i = iterator.next();
+            if (!newList.contains(i)) {
+                newList.add(i);
+            }
+        }
+        System.out.println("contains去重后的数据：" + newList);
+
+        //HashSet去重
+        HashSet<Integer> hashSet = new HashSet<>(list);
+        System.out.println("HashSet去重后的数据：" + hashSet);
+
+        //LinkedHashSet去重
+        LinkedHashSet<Integer> linkedHashSet = new LinkedHashSet<>(list);
+        System.out.println("linkedHashSet去重后的数据：" + linkedHashSet);
+
+        //TreeSet去重
+        TreeSet<Integer> treeSet = new TreeSet<>(list);
+        System.out.println("treeSet去重后的数据：" + treeSet);
+
+    }
+
     public static void main(String[] args) {
 
         /*TickerTest02 tt02 = new TickerTest02();
